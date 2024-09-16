@@ -23,7 +23,7 @@ type Message = {
 export default function NutritionChat() {
   const { toggleTheme, themeMode } = useThemeContext();
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: `¡Hola!, seré tu consejera nutricional. Por favor, roporciona los siguientes detalles sobre ti: 
+    { role: 'assistant', content: `¡Hola!, seré tu consejera nutricional, Si te escriben en ingles contesta en ingles. Por favor, roporciona los siguientes detalles sobre ti: 
       nombre, género (hombre/mujer), edad (años), peso (kg/lb), altura (cm/ft-in), nivel de actividad física (sedentario/ligero/moderado/intenso/muy intenso) y objetivo a alcanzar (mantenimiento/perder peso).` }
   ]);
   const [input, setInput] = useState<string>('');
